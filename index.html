@@ -1,7 +1,221 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advocacia Moderno</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #34495e;
+            padding: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        nav:hover {
+            background-color: #2c3e50;
+        }
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero {
+            background: linear-gradient(135deg, #2980b9, #8e44ad);
+            color: white;
+            padding: 100px 20px;
+            margin-bottom: 50px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            transition: transform 0.5s ease;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        .button {
+            background-color: #f39c12;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #e67e22;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #f39c12;
+        }
+        .faq, .partners {
+            background-color: #ecf0f1;
+            margin-bottom: 50px;
+        }
+        .faq h2, .partners h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .faq ul, .partners ul {
+            list-style: none;
+            padding: 0;
+            font-size: 18px;
+        }
+        .faq li, .partners li {
+            margin: 10px 0;
+        }
 
-<html>
-<body> 
-	<h1 style="text-align:center";>teste de pagina</h1>
+        /* Media Queries para Responsividade */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 20px 0;
+            }
+            nav a {
+                font-size: 20px;
+                margin: 10px 0;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+            .hero p {
+                font-size: 18px;
+            }
+            .button {
+                padding: 12px 22px;
+                font-size: 16px;
+            }
+            .section {
+                padding: 60px 20px;
+            }
+            footer p {
+                font-size: 16px;
+            }
+        }
+
+        /* Para Celulares Menores */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 28px;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .faq h2, .partners h2 {
+                font-size: 30px;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            footer p {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Advocacia Moderno</h1>
+        <p>Soluções jurídicas eficientes e personalizadas</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+        <a href="#parceiros">Parceiros</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Bem-vindo ao nosso escritório de advocacia</h1>
+        <p>Nosso compromisso é com a excelência na defesa de seus interesses.</p>
+        <button class="button">Saiba Mais</button>
+    </section>
+
+    <section id="faq" class="section faq">
+        <h2>Perguntas Frequentes</h2>
+        <ul>
+            <li><strong>Como posso contratar seus serviços?</strong> Entre em contato conosco através da seção de Contato.</li>
+            <li><strong>Quais áreas do direito vocês atendem?</strong> Atuamos em diversas áreas, incluindo direito civil, trabalhista, empresarial, e mais.</li>
+            <li><strong>Qual é o tempo médio de resolução de casos?</strong> O tempo pode variar, mas sempre buscamos soluções rápidas e eficientes.</li>
+        </ul>
+    </section>
+
+    <section id="contato" class="section">
+        <h2>Entre em Contato</h2>
+        <p>Para mais informações ou para agendar uma consulta, envie um e-mail ou ligue para nosso escritório.</p>
+        <p>Email: <a href="mailto:contato@advocaciamoderno.com.br">contato@advocaciamoderno.com.br</a></p>
+        <p>Telefone: (11) 99999-9999</p>
+    </section>
+
+    <section id="parceiros" class="section partners">
+        <h2>Parceiros</h2>
+        <ul>
+            <li>Escritório XYZ</li>
+            <li>Consultoria ABC</li>
+            <li>Associação de Advogados</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Advocacia Moderno | Todos os direitos reservados</p>
+        <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | <a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+    </footer>
+
+    <script>
+        document.querySelector('.hero').addEventListener('mouseenter', function() {
+            document.querySelector('.hero h1').style.transform = 'scale(1.1)';
+        });
+        document.querySelector('.hero').addEventListener('mouseleave', function() {
+            document.querySelector('.hero h1').style.transform = 'scale(1)';
+        });
+    </script>
+
 </body>
 </html>
